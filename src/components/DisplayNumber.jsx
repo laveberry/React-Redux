@@ -4,7 +4,7 @@ import store from "../store";
 export default class DisplayNumber extends Componet {
     //내부 데이터 생성
     state = {number:store.getState(), number}
-    //재호출을 위한 생성자
+    //재호출시 생성자
     constructor(props){
         super(props);
         store.subscribe(function(){

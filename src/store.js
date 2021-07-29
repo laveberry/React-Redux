@@ -5,7 +5,7 @@ import {createStore} from 'redux';
 export default createStore(function(state, action){
     
     //if문 설정
-    if(state=== undefined){
+    if(state === undefined){
         return {number:0}
     }
     if(action.type === 'INCREMENT'){
