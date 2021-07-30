@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// App의 상위 컴포넌트 소환하여 App 감싸기
+import {Provider} from 'react-redux';
+//여기서 한번만 store 적용 해주면됨
+import store from './store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* react-redux 적용*/}
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -7,3 +7,4 @@ npm start
 
 //리덕스 설치
 npm install redux
+npm install react-redux
